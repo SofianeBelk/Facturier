@@ -18,7 +18,7 @@ export class Datas implements HasHtmlFormat{
     ){}
 
     private subTotal(): number{
-        const tvaPercent = this.tva / 200;
+        const tvaPercent = this.tva / 100;
         const totalTva = this.price * tvaPercent;
         return (this.price * totalTva) * this.quantity;
     }
